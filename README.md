@@ -1,5 +1,3 @@
-##Calcuspeak
-
 ### Usage
 
 Download the repository and use Flask to run locally and say a mathematical equation. In a few seconds, you should receive a spoken response.
