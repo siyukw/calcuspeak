@@ -1,12 +1,6 @@
-## Introduction
-
-<script src='index.js'> </script>
-<div id="button">Click Here</div>
-
-
 ### Usage
 
-Click the "start" button and say a mathematical equation. In a few seconds, you should receive a spoken response.
+Download the repository and use Flask to run locally and say a mathematical equation. In a few seconds, you should receive a spoken response.
 
 ### About
 

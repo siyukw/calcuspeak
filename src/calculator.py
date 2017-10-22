@@ -9,6 +9,7 @@ def calculate(str):
 	"""
 	#str = str.replace("is", "%3D")
 	str = str.replace("sign", "sin")
+	str = str.replace("Sign", "sin")
 	str = str.replace("+", "%2B")
 	str = str.replace(" ", "+")
 	appid = "U2VY24-QJJRRGHTP7"
