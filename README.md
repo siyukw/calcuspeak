@@ -30,7 +30,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### About
 
-Calcuspeak was created by [Alexey Beall](www.github.com/otherones5), [Armaan Sood](www.armaansood.com), [Ben MacMillan](www.github.com/beondel), and [Siyu Wang (Katherine)](www.siyukw.github.io).
+Calcuspeak was created by [Alexey Beall](http://www.github.com/otherones5), [Armaan Sood](http://www.armaansood.com), [Ben MacMillan](https://www.github.com/beondel), and [Siyu Wang (Katherine)](http://www.siyukw.github.io).
 
 ### Support or Contact
 
