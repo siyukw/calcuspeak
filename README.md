@@ -1,41 +1,17 @@
-## Welcome to GitHub Pages
+## Introduction
 
-You can use the [editor on GitHub](https://github.com/armaansood/calcuspeak/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-
-<div id="button">start</div>
+<script src='index.js'> </script>
+<div id="button">Click Here</div>
 
 
-### Markdown
+### Usage
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Click the "start" button and say a mathematical equation. In a few seconds, you should receive a spoken response.
 
-```markdown
-Syntax highlighted code block
- 
-# Header 1
-## Header 2
-### Header 3
+### About
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/armaansood/calcuspeak/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Calcuspeak was created by [Alexey Beall](http://www.github.com/otherones5), [Armaan Sood](http://www.armaansood.com), [Ben MacMillan](https://www.github.com/beondel), and [Siyu Wang (Katherine)](http://siyukw.github.io).
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Please contact any of us if you're having troubles with this tool.
