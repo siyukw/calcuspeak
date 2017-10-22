@@ -6,29 +6,43 @@
 
     function startRecord() {
 	var step1 = new XMLHttpRequest();
-	step1.open("GET", "src/speechToText.py");
-	var step1Error = new function() {
+	step1.open("GET", "src/audioToText.py");
+	var step1Error = function() {
 	    console.log("Could not record from mic");
 	};
 	step1.onload = function() {
 	    if(this.status >= 200 && this.status < 300) {
 		var step2 = new XMLHttpRequest();
-		var input = this.responseText;
 		step2.open("POST", "src/calculator.py");
-		var step2Error = new function() {
+		var step2Error = function() {
 		    console.log("Could not convert to solution");
 		};
-		step2.onload = new function() {
+		step2.onload = function() {
 		    if(this.status >= 200 && this.status < 300) {
-			console.log(this.responseText);
+			var step3 = new XMLHttpRequest();
+			step3.open("POST", "src/textToAudio.py");
+			var step3Error = function() {
+			    console.log("Could not output audio");
+			};
+			step3.onload = function() {
+			    if(this.status >= 200 && this.status < 300) {
+				console.log(this.responseText);
+			    } else {
+				step3Error();
+			    }
+			}
+			step3.onerror = step3Error;
+			var step3InputData = new FormData();
+			step3InputData.append("text", this.responseText);
+			step3.send(step3InputData);
 		    } else {
 			step2Error();
 		    }
 		};
 		step2.onerror = step2Error;
-		var inputData = new FormData();
-		inputData.append("text", this.responseText);
-		step2.send(inputData);
+		var step2InputData = new FormData();
+		step2InputData.append("text", this.responseText);
+		step2.send(step2InputData);
 	    } else {
 		step1Error();
 	    }
