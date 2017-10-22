@@ -5,7 +5,7 @@
 
     function click() {
 	var xhr = new XMLHttpRequest();
-	xhr.open("GET", "src/main.py");
+	xhr.open("GET", "src/main.php");
 	var error = function() {
 	    console.log("Server error");
 	};
