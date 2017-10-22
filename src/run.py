@@ -10,7 +10,7 @@ def start():
 
 @app.route('/my-link/')
 def run():
-	main.qmain)
+	main.main()
 	print("howdy")
 	forward_message = "Moving Forward..."
 	return render_template('index.html', message=forward_message)
