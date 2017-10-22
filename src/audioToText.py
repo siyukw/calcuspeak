@@ -18,4 +18,4 @@ def audioToText():
     except sr.RequestError as e:
         print("Could not request results from Microsoft Bing Voice Recognition service; {0}".format(e))
 
-print(audioToText())
+return audioToText()
