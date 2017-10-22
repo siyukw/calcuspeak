@@ -1,9 +1,9 @@
 from gtts import gTTS
 import subprocess
 import os
-import cgi
+#import cgi
 
-form = cgi.FieldStorage()
+#form = cgi.FieldStorage()
 
 def text_to_speech(answer):
     tts = gTTS(text=answer, lang='en')
@@ -12,4 +12,4 @@ def text_to_speech(answer):
     subprocess.call(["afplay", audio_file])
     os.remove("./answer.mp3")
 
-text_to_speech(form.getvalue("text"))
+#text_to_speech(form.getvalue("text"))
