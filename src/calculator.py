@@ -1,5 +1,9 @@
 import requests
 
+import cgi
+form = cgi.FieldStorage()
+dataToUseInCalculate = form.getvalue('text')
+print(calculate(dataToUseInCalculate))
 
 def calculate(str):
 	"""
