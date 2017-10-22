@@ -1,3 +1,4 @@
+<?php
 $command = "python src/main.py 2>&1";
 $pid = popen( $command,"r");
 while( !feof( $pid ) )
@@ -8,3 +9,4 @@ while( !feof( $pid ) )
  usleep(100000);
 }
 pclose($pid);
+?>
