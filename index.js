@@ -13,7 +13,7 @@
 	    if(this.status < 200 || this.status >= 300) {
 		error();
 	    } else {
-		console.log("done.");
+		console.log(this.responseText);
 	    }
 	};
 	xhr.onerror = error;
