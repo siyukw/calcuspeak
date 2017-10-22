@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/armaansood/calcuspeak/edit
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-
+<script src='index.js'> </script>
 <div id="button">start</div>
 
 
