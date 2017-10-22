@@ -12,9 +12,12 @@
 	xhr.onload = function() {
 	    if(this.status < 200 || this.status >= 300) {
 		error();
+	    } else {
+		console.log("done.");
 	    }
 	};
 	xhr.onerror = error;
+	console.log("starting.");
 	xhr.send();
     }
 })();
