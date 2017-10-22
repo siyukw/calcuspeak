@@ -6,8 +6,8 @@
 
     function startRecord() {
 	var step1 = new XMLHttpRequest();
-	step1.open("GET", "src/speechToText.py");
-	var step1Error = new function() {
+	step1.open("GET", "src/audioToText.py");
+	var step1Error = function() {
 	    console.log("Could not record from mic");
 	};
 	step1.onload = function() {
@@ -15,10 +15,10 @@
 		var step2 = new XMLHttpRequest();
 		var input = this.responseText;
 		step2.open("POST", "src/calculator.py");
-		var step2Error = new function() {
+		var step2Error = function() {
 		    console.log("Could not convert to solution");
 		};
-		step2.onload = new function() {
+		step2.onload = function() {
 		    if(this.status >= 200 && this.status < 300) {
 			console.log(this.responseText);
 		    } else {
