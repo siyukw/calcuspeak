@@ -9,6 +9,7 @@ def calculate(str):
 	"""
 	#str = str.replace("is", "%3D")
 	str = str.replace("sign", "sin")
+	str = str.replace("+", "%2B")
 	str = str.replace(" ", "+")
 	appid = "U2VY24-QJJRRGHTP7"
 	url = "https://api.wolframalpha.com/v2/query?input=" + str + "&format=plaintext&output=JSON&appid="+ appid
@@ -34,4 +35,7 @@ def calculate(str):
 	answer = answer.replace("sqrt", " root  ")
 	answer = answer.replace("^", " to the power of ")
 	answer = answer.replace("-", " minus ")
+	answer = answer.replace("!", " not ")
+	answer = answer.replace("/", " divided by ")
+
 	return answer
