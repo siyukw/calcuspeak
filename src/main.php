@@ -1,5 +1,5 @@
 <?php
-$command = "python3 src/main.py 2>&1";
+$command = "python3 main.py 2>&1";
 $pid = popen( $command,"r");
 while( !feof( $pid ) )
 {
