@@ -1,6 +1,6 @@
 import calculator, textToAudio, audioToText
 
-def q():
+def main():
     data = audioToText.audioToText()
     print(data)
     sol = calculator.calculate(data)
